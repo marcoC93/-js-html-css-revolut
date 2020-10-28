@@ -9,6 +9,19 @@ header {
     background: red ;
 }
 
+.dropdown-item {
+    position: relative;
+}
+.dropdown-item > div.dropdown-menu > ul {
+
+    display: none;
+    position: absolute;
+
+}
+
+div.dropdown-menu > ul.active {
+    display: block;
+}
 .header-left {
     float: left;
     display: flex;
