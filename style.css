@@ -6,16 +6,34 @@
 
 header {
     height: 100px;
-    background: red ;
+
 }
 
 .dropdown-item {
+
     position: relative;
+	padding: 0 10px;
+	height: 100%;
+	line-height: 100px;
+	width: 100%;
 }
+.dropdown-item a {
+    text-decoration: none ;
+    color: inherit;
+    padding: 10px;
+}
+.dropdown-item a:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+    border-radius: 0.5rem
+}
+
 .dropdown-item > div.dropdown-menu > ul {
 
     display: none;
     position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+    padding: 10px;
+	border-radius: 0.5rem;
 
 }
 
@@ -46,15 +64,30 @@ div.dropdown-menu > ul.active {
     height: 100%;
     list-style-type: none;
 }
+.header-left ul li {
+    padding: 0 10px ;
+    
+}
+.header-left ul li:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+    padding: 10px;
+	border-radius: 0.5rem;
 
+}
 .header-right {
     width: 60%;
     height: 100% ;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .header-right ul {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+}
+.header-right button {
+	width: 10%;
+	margin: 20px 5px;
+	border-radius: 5px;
 }
